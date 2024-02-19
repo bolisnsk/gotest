@@ -1,0 +1,45 @@
+
+.testlayout {
+    width: 100vw;
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: calc(var(--vh, 1vh)*100); 
+}
+
+.startpage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    max-width: 900px;
+    align-items: center;
+}
+
+img {
+    width: 440px;
+}
+
+.tbutton{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(97, 175, 97);
+    color: white;
+    border-radius: 40px;
+    border: 4px solid rgb(64, 114, 64);
+    font-family: GoryeongStrawberry;
+}
+
+
+.statebar{
+    width: 100%;
+    background-color: rgba(12, 71, 37, 0.486);
+    border-radius: 40px;
+}
