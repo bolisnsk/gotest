@@ -33,15 +33,16 @@ function Qna() {
         );
 
         setTotalScore(newScore);
+        console.log(newScore);
 
         if(qnaList.length !== questionNumber + 1){
             setQuestionNumber(questionNumber + 1);
         } else {
-            const mbti = newScore.reduce(
-                (acc, curr) => acc + (curr.score >= 2 ? curr.id.substring(0, 1): curr.id.substring(1,2)),
-                ""
-            );
             setTimeout(() => {
+                const mbti = newScore.reduce(
+                    (acc, curr) => acc + (curr.score >= 4 ? curr.id.substring(0, 1): curr.id.substring(1,2)),
+                    ""
+                );
                 navigate({
                     pathname: "/result",
                     search: `?${createSearchParams({
@@ -65,8 +66,7 @@ function Qna() {
                     <div>Q{questionNumber + 1}. </div>
                     {qnaList[questionNumber].q}</div>
                     <div className='btnGroup'>
-                        <button onClick={() => handleClickButton(2, qnaList[questionNumber].type)}> {qnaList[questionNumber].a1} </button>
-                        <button onClick={() => handleClickButton(1, qnaList[questionNumber].type)}> {qnaList[questionNumber].a2} </button>
+                        <button onClick={() => handleClickButton(1, qnaList[questionNumber].type)}> {qnaList[questionNumber].a1} </button>
                         <button onClick={() => handleClickButton(0, qnaList[questionNumber].type)}> {qnaList[questionNumber].a3} </button>
                     </div>         
                 </div>
