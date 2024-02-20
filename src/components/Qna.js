@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { createSearchParams, useNavigate } from 'react-router-dom';
 import './Qna.css'
 import qnaList from './contents/questions';
 import { useState, useEffect } from 'react';
@@ -12,9 +12,6 @@ function Qna() {
         {id: "JP", score: 0},
     ])
     const navigate = useNavigate();
-    
-    console.log(qnaList);
-    console.log(totalScore);
 
     const setVh = () => {
         const vh = window.innerHeight * 0.01;
@@ -46,7 +43,13 @@ function Qna() {
                 ""
             );
             console.log('mbti', mbti);
-            navigate("/result");
+            navigate({
+                pathname: "/result",
+                search: `?${createSearchParams({
+                    mbti: mbti,
+                })}`
+            }
+            );
         }
         setQuestionNumber(questionNumber + 1);
     }
