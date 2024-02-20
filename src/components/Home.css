@@ -7,7 +7,7 @@
     justify-self: center;
     align-items: center;
     background-color: aliceblue;
- 
+    height: calc(var(--vh, 1vh)*100); 
 }
 
 .startpage{

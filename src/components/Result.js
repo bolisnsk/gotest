@@ -17,7 +17,7 @@ const Result = () => {
     console.log(resultData);
 
     return (
-        <div className='testlayout'>
+
             <div className='testpage'>
                 <div className='resultpage'>
                     <div className='title'>당신에게 딱 맞는 고령군 여행지</div>
@@ -29,7 +29,7 @@ const Result = () => {
                 </div>
                 <button onClick={() => navigate('/')}> 다시하기 </button>
             </div>
-        </div>
+
     );
 };
 
