@@ -40,6 +40,7 @@ function Qna() {
         if(qnaList.length !== questionNumber + 1){
             setQuestionNumber(questionNumber + 1);
         } else {
+
             navigate("/result");
         }
         setQuestionNumber(questionNumber + 1);
@@ -52,7 +53,9 @@ function Qna() {
                 <div className='progressBar'>
                     <div className='highlight' style={{width: (questionNumber / qnaList.length ) * 100 + "%" } }></div>
                     </div>
-                    <div className='question'>{qnaList[questionNumber].q}</div>
+                    <div className='question'>
+                    <div>Q{questionNumber + 1}. </div>
+                    {qnaList[questionNumber].q}</div>
                     <div className='btnGroup'>
                         <button onClick={() => handleClickButton(2, qnaList[questionNumber].type)}> {qnaList[questionNumber].a1} </button>
                         <button onClick={() => handleClickButton(1, qnaList[questionNumber].type)}> {qnaList[questionNumber].a2} </button>
