@@ -23,9 +23,8 @@
     flex-flow: column;
     max-width: 900px;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     white-space: pre-line;
-
 }
 
 .progressBar{
@@ -43,6 +42,11 @@
     transition: ease 1s;
 }
 
+.gaya{
+    width: 28px;
+    height: 28px;
+}
+
 .question{
     margin-top: 180px;
 }
@@ -57,13 +61,13 @@
 button{
     font-family: GoryeongStrawberry;
     border: 0px;
-    background-color: rgb(97, 175, 97);
-    color: white;
+    background-color: white;
+    color: rgb(64, 114, 64);
     border-radius: 40px;
     border: 4px solid rgb(64, 114, 64);
     margin: 10px;
-    height: 60px;
-    width: 360px;
-    font-size: 16px;
+    height: 56px;
+    width: 320px;
+    font-size: 14px;
     border-radius: 40px;
 }

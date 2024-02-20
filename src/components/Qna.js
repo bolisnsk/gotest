@@ -2,6 +2,7 @@ import { createSearchParams, useNavigate } from 'react-router-dom';
 import './Qna.css'
 import qnaList from './contents/questions';
 import { useState, useEffect } from 'react';
+import gaya from '../images/gaya.png';
 
 function Qna() {
     const [questionNumber, setQuestionNumber] = useState(0);
@@ -40,16 +41,15 @@ function Qna() {
                 (acc, curr) => acc + (curr.score >= 2 ? curr.id.substring(0, 1): curr.id.substring(1,2)),
                 ""
             );
-            console.log('mbti', mbti);
-            navigate({
-                pathname: "/result",
-                search: `?${createSearchParams({
-                    mbti: mbti,
-                })}`
-            }
-            );
+            setTimeout(() => {
+                navigate({
+                    pathname: "/result",
+                    search: `?${createSearchParams({
+                        mbti: mbti,
+                    })}`
+                });
+            }, 1000)
         }
-        setQuestionNumber(questionNumber + 1);
     }
 
     return (
@@ -57,7 +57,9 @@ function Qna() {
             <div className='testlayout'>
                 <div className='testpage'>
                 <div className='progressBar'>
-                    <div className='highlight' style={{width: (questionNumber/ qnaList.length ) * 100  + "%"} }></div>
+                    <div className='highlight' style={{width: (questionNumber + 1/ qnaList.length ) * 10  + "%"} }>
+                        <img src={gaya} alt='가야돌이' className='gaya'/>
+                    </div>
                     </div>
                     <div className='question'>
                     <div>Q{questionNumber + 1}. </div>
