@@ -37,9 +37,15 @@ function Qna() {
         );
 
         setTotalScore(newScore);
+
         if(qnaList.length !== questionNumber + 1){
             setQuestionNumber(questionNumber + 1);
         } else {
+            const mbti = newScore.reduce(
+                (acc, curr) => acc + (curr.score >= 2 ? curr.id.substring(0, 1): curr.id.substring(1,2)),
+                ""
+            );
+            console.log('mbti', mbti);
             navigate("/result");
         }
         setQuestionNumber(questionNumber + 1);
