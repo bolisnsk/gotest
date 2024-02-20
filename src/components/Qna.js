@@ -6,8 +6,6 @@ import { useState, useEffect } from 'react';
 function Qna() {
     const [questionNumber, setQuestionNumber] = useState(0);
     const [totalScore, setTotalScore] = useState([
-        {id: "EI", score: 0},
-        {id: "SN", score: 0},
         {id: "TF", score: 0},
         {id: "JP", score: 0},
     ])
