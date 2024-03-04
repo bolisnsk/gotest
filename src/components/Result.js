@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Result.css';
 import resultdata from './contents/resultdata';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import Kakaobtn from './Kakaobtn';
 
 const Result = () => {
     const navigate = useNavigate();
@@ -28,6 +29,7 @@ const Result = () => {
                     <div className='rdesc'>{resultData.desc2}</div>
                 </div>
                 <button onClick={() => navigate('/')}> 다시하기 </button>
+                <Kakaobtn data={resultData} />
             </div>
         </div>
     );

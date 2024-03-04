@@ -31,7 +31,7 @@ function Home() {
     <>
       <div className='testlayout'>
           <div className='startpage'>
-            <img src={logo} alt='제목'/>
+            <img src={logo} alt='제목' style={{width: 440, height: 440}}/>
             <div className='tbutton' onClick={startBtn}>테스트 GOGO!</div>
           </div>
         </div>
