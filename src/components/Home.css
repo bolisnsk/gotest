@@ -1,4 +1,3 @@
-
 .testlayout {
     width: 100vw;
     height: 100%;
@@ -19,10 +18,6 @@
     align-items: center;
 }
 
-img {
-
-}
-
 .tbutton{
     width: 200px;
     height: 30px;
@@ -35,8 +30,8 @@ img {
     border-radius: 40px;
     border: 4px solid rgb(64, 114, 64);
     font-family: 땅스;
+    margin-bottom: 10px;
 }
-
 
 .statebar{
     width: 100%;
