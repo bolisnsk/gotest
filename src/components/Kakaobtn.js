@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React from "react";
 
 const { Kakao } = window;
 
@@ -6,9 +6,9 @@ const Kakaobtn = ({data}) => {
     const url = "https://goryeong-test.netlify.app/";
     const resultUrl = window.location.href;
 
-    useEffect(() => {
+    if (!Kakao.isInitialized()) {
         Kakao.init("c40db106dba30c9975c1368d5f8d4d6a");
-    }, []);
+    }
 
     const shareKakao = () => {
         Kakao.Link.sendDefault({
