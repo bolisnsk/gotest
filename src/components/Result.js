@@ -27,10 +27,11 @@ const Result = () => {
                     <img src={resultData.img} alt='고분군' className='descimg' />
                     <div className='title'>고령알GO 관광하GO의 방문후기</div>
                     <div className='rdesc'>{resultData.desc2}</div>
-                </div>
-                <button onClick={() => navigate('/')}> 다시하기 </button>
-                <Kakaobtn data={resultData} />
-                <button onClick={() => navigate('/Types')}> 모든 유형 보기 </button>
+                    <button onClick={() => navigate('/')}> 다시하기 </button>
+                    <Kakaobtn data={resultData} />
+                    <button onClick={() => navigate('/Types')}> 모든 유형 보기 </button>
+                    </div>
+                
             </div>
         </div>
     );

@@ -57,10 +57,10 @@ function Qna() {
         <>
             <div className='testlayout'>
                 <div className='testpage'>
-                <div className='progressBar'>
-                    <div className='highlight' style={{width: (questionNumber + 1/ qnaList.length ) * 10  + "%"} }>
-                        <img src={gaya} alt='가야돌이' className='gaya'/>
-                    </div>
+                    <div className='progressBar'>
+                        <div className='highlight' style={{width: (questionNumber + 1/ qnaList.length ) * 10  + "%"} }>
+                            <img src={gaya} alt='가야돌이' className='gaya'/>
+                        </div>
                     </div>
                     <div className='question'>
                     <div>Q{questionNumber + 1}. </div>

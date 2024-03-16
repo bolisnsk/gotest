@@ -4,6 +4,7 @@
     padding: 40px 20px;
     height: 100%;
     background-color: white;
+    max-width: 900px;
 }
 
 .title{
@@ -26,6 +27,6 @@
 .descimg{
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 300px;
+    max-width: 100%;
     height: 300px;
 }
