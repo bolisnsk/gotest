@@ -3,9 +3,11 @@ import './Qna.css'
 import qnaList from './contents/questions';
 import { useState, useEffect } from 'react';
 import gaya from '../images/gaya.png';
+import Loading from './Loading';
 
 function Qna() {
     const [questionNumber, setQuestionNumber] = useState(0);
+    const [isLoading, setIsLoading] = useState(false);
     const [totalScore, setTotalScore] = useState([
         {id: "TF", score: 0},
         {id: "JP", score: 0},
@@ -38,18 +40,19 @@ function Qna() {
         if(qnaList.length !== questionNumber + 1){
             setQuestionNumber(questionNumber + 1);
         } else {
-            setTimeout(() => {
                 const mbti = newScore.reduce(
                     (acc, curr) => acc + (curr.score >= 4 ? curr.id.substring(0, 1): curr.id.substring(1,2)),
                     ""
                 );
-                navigate({
-                    pathname: "/result",
-                    search: `?${createSearchParams({
-                        mbti: mbti,
-                    })}`
-                });
-            }, 1000)
+                setTimeout(() => {
+                    navigate({
+                        pathname: "/result",
+                        search: `?${createSearchParams({
+                            mbti: mbti,
+                        })}`
+                    });      
+                },  1000)
+                return <Loading />
         }
     }
 
