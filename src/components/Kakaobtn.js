@@ -3,7 +3,7 @@ import React from "react";
 const { Kakao } = window;
 
 const Kakaobtn = ({data}) => {
-    const url = "https://goryeong-test.netlify.app/";
+    const url = "https://goryeong-test.netlify.app";
     const resultUrl = window.location.href;
 
     if (!Kakao.isInitialized()) {

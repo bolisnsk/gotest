@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import resultdata from './contents/resultdata';
 
 const Types = () => {
