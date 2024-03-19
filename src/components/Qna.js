@@ -7,7 +7,6 @@ import Loading from './Loading';
 
 function Qna() {
     const [questionNumber, setQuestionNumber] = useState(0);
-    const [isLoading, setIsLoading] = useState(false);
     const [totalScore, setTotalScore] = useState([
         {id: "TF", score: 0},
         {id: "JP", score: 0},
