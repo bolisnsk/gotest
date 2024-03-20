@@ -30,8 +30,7 @@ const Result = () => {
                     <button onClick={() => navigate('/')}> 다시하기 </button>
                     <Kakaobtn data={resultData} />
                     <button onClick={() => navigate('/Types')}> 모든 유형 보기 </button>
-                    </div>
-                
+                </div>
             </div>
         </div>
     );
