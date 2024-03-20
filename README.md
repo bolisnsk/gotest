@@ -4,7 +4,7 @@
 [테스트 해보러가기](https://goryeong-test.netlify.app/)
 
 # 기능
-💻테스트화면
+## 💻테스트화면
 
 <img src="https://github.com/bolisnsk/gotest/assets/50792699/c1dca7fe-8554-4f52-a715-f37731680fdc" width="200" height="400">
 <img src="https://github.com/bolisnsk/gotest/assets/50792699/1cd69c7a-f47b-4e6b-bcf0-f30cc8ee7005" width="200" height="400">
@@ -13,7 +13,7 @@
 2. 선택지를 선택하면 프로그래스바가 현재 상태를 알려줍니다.
 3. 문제를 전부 선택하면 결과페이지가 나옵니다.
 
-💻결과페이지
+## 💻결과페이지
 
 <img src="https://github.com/bolisnsk/gotest/assets/50792699/fc8cc93e-03d4-4b3d-a756-f7f049c85087"  width="200" height="400">
 <img src="https://github.com/bolisnsk/gotest/assets/50792699/f18336c7-5f07-4c47-b893-4f33c14c3fb4"  width="200" height="400">
