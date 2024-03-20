@@ -5,8 +5,8 @@
 
 # 기능
 테스트화면
-![KakaoTalk_20240320_151732253](https://github.com/bolisnsk/gotest/assets/50792699/c1dca7fe-8554-4f52-a715-f37731680fdc){: width="100" height="100"}
-![KakaoTalk_20240320_151732253_01](https://github.com/bolisnsk/gotest/assets/50792699/1cd69c7a-f47b-4e6b-bcf0-f30cc8ee7005){: width="100" height="100"}
+<img src="https://github.com/bolisnsk/gotest/assets/50792699/c1dca7fe-8554-4f52-a715-f37731680fdc" width="200" height="400">
+![KakaoTalk_20240320_151732253_01](https://github.com/bolisnsk/gotest/assets/50792699/1cd69c7a-f47b-4e6b-bcf0-f30cc8ee7005)
 
 1. 테스트하기 버튼을 이용하여 테스트를 시작합니다.
 2. 선택지를 선택하면 프로그래스바가 현재 상태를 알려줍니다.
