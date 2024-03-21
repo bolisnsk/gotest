@@ -24,6 +24,7 @@
 4. 모든 유형을 볼 수 있습니다.
 
 ## 💻모든유형 페이지
-<img scr="https://github.com/bolisnsk/gotest/assets/50792699/510d3e16-4abf-41fa-a29c-2f38ff745533"  width="200" height="400">
+<img scr="https://github.com/bolisnsk/gotest/assets/50792699/0cb8d71e-e490-45ea-85d3-8d791f8f5030"  width="200" height="400">
+
 모든 유형을 보여줍니다. 버튼을 통해 테스트화면으로 이동 가능 합니다.
 
