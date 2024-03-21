@@ -11,10 +11,10 @@ const Wrapper = styled.div`
 const Text = styled.div`
     font-size: 20px;
     text-align: center;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
 `
 const BoxComponent = styled.div`
-    width: 380px;
+    width: 280px;
     margin : 1.5rem;
     display: flex;
     flex-direction:column;
@@ -40,7 +40,7 @@ const SmallText = styled.div`
 
 const Types = () => {
     const navigate = useNavigate();
-
+    
     return(
         <>
             <Wrapper>
