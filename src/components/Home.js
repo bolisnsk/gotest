@@ -37,7 +37,6 @@ function Home() {
           <div className='startpage'>
             <img src={logo} alt='제목' style={{width: 440, height: 440}}/>
             <div className='tbutton' onClick={startBtn}>테스트 GOGO!</div>
-            <div className='tbutton' onClick={allBtn}>모든 유형 보기</div>
           </div>
         </div>
     </>
