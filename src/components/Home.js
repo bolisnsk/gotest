@@ -27,10 +27,6 @@ function Home() {
     movePage('/Qna');
   }
 
-  const allBtn = () =>{
-    movePage('/Types');
-  }
-
   return (
     <>
       <div className='testlayout'>
